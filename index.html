@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Форма підписки</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <form id="subscription-form" class="form">
+      <h1>Підписка на розсилку</h1>
+      <p>Введіть свій email, щоб отримувати новини</p>
+      <input type="email" id="email" placeholder="Введіть email" required>
+      <button type="submit">Підписатися</button>
+      <p id="error-message" class="error"></p>
+    </form>
+
+    <dialog id="success-dialog" class="success-dialog">
+      <h2>✅ Підписка успішна!</h2>
+      <p>Ви підписалися з email: <span id="user-email"></span></p>
+      <button id="close-dialog">Закрити</button>
+    </dialog>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
